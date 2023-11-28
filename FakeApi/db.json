@@ -1,0 +1,124 @@
+{
+    "product": [
+        {
+            "id":1,
+            "name":"Brown paperbag waist pencil skirt",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-4.jpg",
+            "category":"Women",
+            "price":"60",
+            "color":"Brown",
+            "size":"S",
+            "brand":"RiverIsland"
+        },
+        {
+            "id":2,
+            "name":"Dark yellow lace cut out swing dress",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-5.jpg",
+            "category":"Dresses",
+            "price":"84",
+            "color":"Yellow",
+            "size":"M",
+            "brand":"Geox"
+        },
+        {
+            "id":3,
+            "name":"Khaki utility boiler jumpsuit",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-6.jpg",
+            "category":"Jackets",
+            "price":"120",
+            "color":"Khaki",
+            "size":"L",
+            "brand":"Next"
+        },
+        {
+            "id":4,
+            "name":"Blue utility pinafore denim dress",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-7.jpg",
+            "category":"Jeans",
+            "price":"76",
+            "color":"Blue",
+            "size":"XL",
+            "brand":"Newbalance"
+        },
+        {
+            "id":5,
+            "name":"Beige knitted elastic runner shoes",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-8.jpg",
+            "category":"Shoes",
+            "price":"84",
+            "color":"Beige",
+            "size":"XXL",
+            "brand":"Next"
+        },
+        {
+            "id":6,
+            "name":"Orange saddle lock front chain cross body bag",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-9.jpg",
+            "category":"Bags",
+            "price":"84",
+            "color":"Orange",
+            "size":"Xs",
+            "brand":"Ugg"
+        },
+        {
+            "id":7,
+            "name":"Light brown studded Wide fit wedges",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-11.jpg",
+            "category":"Shoes",
+            "price":"110",
+            "color":"Brown",
+            "size":"S",
+            "brand":"F&F"
+        },
+        {
+            "id":8,
+            "name":"Yellow button front tea top",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-10.jpg",
+            "category":"Jumpers",
+            "price":"56",
+            "color":"Yellow",
+            "size":"M",
+            "brand":"F&F"
+        },
+        {
+            "id":9,
+            "name":"Black soft RI weekend travel bag",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-12.jpg",
+            "category":"Bags",
+            "price":"68",
+            "color":"Black",
+            "size":"L",
+            "brand":"Ugg"
+        },
+        {
+            "id":10,
+            "name":"Beige metal hoop tote bag",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-13.jpg",
+            "category":"Bags",
+            "price":"76",
+            "color":"Beige",
+            "size":"XL",
+            "brand":"Newbalance"
+        },
+        {
+            "id":11,
+            "name":"Brown zebra print dungaree dress",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-14.jpg",
+            "category":"Dresses",
+            "price":"80",
+            "color":"Brown",
+            "size":"XXL",
+            "brand":"Geox"
+        },
+        {
+            "id":12,
+            "name":"Beige ring handle circle cross body bag",
+            "image":"https://portotheme.com/html/molla/assets/images/products/product-15.jpg",
+            "category":"Bags",
+            "price":"56",
+            "color":"Beige",
+            "size":"Xs",
+            "brand":"RiverIsland"
+        }
+    ]
+  }

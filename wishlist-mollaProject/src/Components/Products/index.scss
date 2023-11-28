@@ -1,0 +1,442 @@
+
+.sort {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #ebebeb;
+
+    .sortright {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        button {
+            padding: 2px 5px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        rect {
+            fill: #919297;
+        }
+
+        button:hover rect {
+            fill: #333333;
+        }
+
+        .sortbtn {
+            border: 1px solid #919297;
+            color: #919297;
+        }
+
+        .sortbtn:hover {
+            border: 1px solid #333333;
+            color: #333333;
+        }
+    }
+
+    .sortleft {
+        width: 30%;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: #919297;
+        }
+
+        span {
+            color: #333333;
+        }
+    }
+
+}
+
+.products {
+    width: 100%;
+    display: grid;
+
+    ul {
+        padding-top: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: 0.3s;
+
+        .cardimgs {
+            position: relative;
+
+            .addtocart {
+                opacity: 0;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: white;
+                width: 100%;
+                height: 30px;
+                border-bottom: 0.1rem solid #ebebeb;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #b87145;
+                overflow: hidden;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .addtocart:hover{
+                background-color: #b87145;
+                color: white;
+            }
+            .righticons {
+                position: absolute;
+                opacity: 0;
+                right: 30px;
+                top: 20px;
+                transition: 0.3s;
+
+                .circle {
+                    width: 25px;
+                    height: 25px;
+                    background-color: white;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #b87145;
+                    cursor: pointer;
+                }
+                .circle:hover{
+                    background-color: #b87145;
+                    color: white;
+                }
+            }
+        }
+
+        img {
+            width: 12vw;
+            height: 100%;
+        }
+    }
+
+    ul:hover .addtocart {
+        transition: 0.3s;
+        opacity: 1;
+        bottom: 0;
+
+    }
+
+    ul:hover .righticons {
+        transition: 0.3s;
+        opacity: 1;
+        right: 20px;
+    }
+
+    ul:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+}
+
+.bigcontainer {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    .filterspart {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            cursor: pointer;
+        }
+        h2 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .colors {
+            width: 70%;
+            padding-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .beige {
+                width: 20px;
+                height: 20px;
+                background-color: #dcccba;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .brown {
+                width: 20px;
+                height: 20px;
+                background-color: #b87145;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .black {
+                width: 20px;
+                height: 20px;
+                background-color: #333333;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .yellow {
+                width: 20px;
+                height: 20px;
+                background-color: #fff600;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .blue {
+                width: 20px;
+                height: 20px;
+                background-color: #3399cc;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .khaki {
+                width: 20px;
+                height: 20px;
+                background-color: #728639;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .orange {
+                width: 20px;
+                height: 20px;
+                background-color: #ff7f50;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: none;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        
+
+        .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            button{
+                border: 1px solid #333333;
+                background-color: transparent;
+                width: 100px;
+                height: 40px;
+                font-size: 15px;
+            }
+            button:hover{
+                background-color: #333333;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .sizes {
+            div {
+                display: flex;
+                padding-left: 10px;
+                gap: 10px;
+                font-size: 20px;
+            }
+
+            input {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #555555;
+                background-clip: content-box;
+                padding: 3px;
+            }
+
+            input:checked {
+                background-color: #555555;
+            }
+
+        }
+
+        .brand {
+            div {
+                display: flex;
+                padding-left: 10px;
+                gap: 10px;
+                font-size: 20px;
+            }
+
+            input {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #555555;
+                background-clip: content-box;
+                padding: 3px;
+            }
+
+            input:checked {
+                background-color: #555555;
+            }
+        }
+
+        .category {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #555555;
+                background-clip: content-box;
+                padding: 3px;
+            }
+
+            input:checked {
+                background-color: #555555;
+            }
+
+            label {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 20px;
+
+                div {
+                    display: flex;
+                    padding-left: 10px;
+                    gap: 10px;
+                }
+
+                span {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid black;
+                    margin-right: 10px;
+                    display: flex;
+                    font-size: 15px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        .filter {
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.1rem solid #ebebeb;
+
+            span {
+                padding-right: 10px;
+                cursor: pointer;
+                color: #cc9966;
+            }
+        }
+    }
+
+    .shopside {
+        width: 75%;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+     width: 100%;
+    gap: 30px;
+    padding: 20px;
+
+    button {
+         color: #333333;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+       
+    }
+
+    button:hover {
+        border: 1px solid #919297;
+        color: #b87145;
+         cursor: pointer;
+    }
+    .texts{
+        position: relative;
+        p{
+            position: absolute;
+            top: -50px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            width: 60%;
+        }
+    }
+}
+
+h3{
+    color: #555555;
+}
