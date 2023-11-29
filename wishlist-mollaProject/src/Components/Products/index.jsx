@@ -1,5 +1,5 @@
 // importlarim
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faGlasses } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,8 @@ import { faRandom } from "@fortawesome/free-solid-svg-icons";
 import { Slider } from "antd"
 import './index.scss'
 import useFetch from './../../Hook/useFetch';
+import { WishlistContext } from "../../Context/wishlist";
+import Wishlist from "../Wishlist";
 
 function Products() {
     const [data, setData, fetchData] = useFetch([]);
@@ -141,6 +143,8 @@ function Products() {
             {index + 1}
         </button>
     ));
+        
+        const { wishlist, addToWishlist, removeFromWishlist } = useContext(WishlistContext)
 
     return (
         <div className="bigcontainer">
@@ -536,7 +540,9 @@ function Products() {
                             <div className="cardimgs">
                                 <img src={item.image} alt="" />
                                 <div className="righticons">
-                                    <div className="circle"><FontAwesomeIcon icon={faHeart} /></div>
+                                    <button onClick={()=>addToWishlist(item)}>
+                                        <div className="circle"><FontAwesomeIcon icon={faHeart} /></div>
+                                    </button>
                                     <div className="circle"><FontAwesomeIcon icon={faGlasses} /></div>
                                     <div className="circle"><FontAwesomeIcon icon={faRandom} /></div>
                                 </div>
@@ -552,6 +558,7 @@ function Products() {
                 </div>
                 <div className="pagination">{paginationButtons}</div>
             </div>
+            <Wishlist/>
         </div>
     );
 }
